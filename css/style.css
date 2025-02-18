@@ -1,0 +1,184 @@
+/* Styles globaux */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #8a2be2, #6a0dad, #9b30ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Animation de fond magique */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header */
+.header {
+    background-color: rgba(75, 0, 130, 0.7); /* Violet semi-transparent */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7), 0 0 25px #8a2be2;
+    animation: glowingText 1.5s ease-in-out infinite alternate;
+}
+
+/* Animation de texte lumineux */
+@keyframes glowingText {
+    0% {
+        text-shadow: 0 0 5px #8a2be2, 0 0 10px #8a2be2, 0 0 15px #8a2be2;
+    }
+    100% {
+        text-shadow: 0 0 10px #8a2be2, 0 0 20px #8a2be2, 0 0 30px #8a2be2;
+    }
+}
+
+/* Section */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: rgba(50, 50, 50, 0.8); /* Fond semi-transparent */
+    border-radius: 12px;
+    border: 2px solid #8a2be2;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animation de fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Liste */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    padding: 10px 0;
+    font-size: 1.2em;
+    background: rgba(138, 43, 226, 0.4);
+    margin: 5px 0;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+ul li:hover {
+    transform: scale(1.05);
+    background: #8a2be2;
+}
+
+/* Footer */
+.footer {
+    background-color: #4b0082;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Effet de zoom sur les emojis */
+.emoji:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+}
+
+/* Cadre photo */
+.photo-frame {
+    border: 5px solid #8a2be2;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+    margin-top: 20px;
+    animation: photoFrameAnimation 1s ease-in-out;
+}
+
+@keyframes photoFrameAnimation {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.photo {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.photo:hover {
+    transform: scale(1.1);
+}
+
+/* Style pour les zones de texte d'histoires */
+.story {
+    width: 100%;
+    height: 150px;
+    border: 2px solid #8a2be2;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgba(50, 50, 50, 0.8);
+    color: #fff;
+    resize: none;
+}
+
+/* Conteneur vidéo */
+.audio-container {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Section d'objectifs */
+h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+/* Conteneur audio avec vidéo et cadre */
+.audio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Cadre de la vidéo */
+.video-frame {
+    flex: 1;
+    margin-right: 20px;
+}
+
+
